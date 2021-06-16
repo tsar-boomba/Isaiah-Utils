@@ -20,7 +20,6 @@ def main():
     except ValueError:
         numberOfGuards = numberOfGuardsValidation()
     try:
-        print(numberOfGuards)
         global timeToSwitch
         timeToSwitch = int(input("How long between swaps? (max 60 mins) "))
         timeToSwitch = timeToSwitchValidation()
@@ -79,7 +78,6 @@ def timeFormatter():
 def numberOfGuardsValidation():
     global numberOfGuards
     try:
-        print(numberOfGuards)
         if 1 <= numberOfGuards <= 10:
             return numberOfGuards
         else:
@@ -235,3 +233,4 @@ def scheduleGenerator():
 
 if __name__ == "__main__":
     main()
+
