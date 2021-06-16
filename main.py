@@ -27,7 +27,6 @@ def main():
         timeToSwitch = timeToSwitchValidation()
     try:
         global hours
-        print(numberOfGuards)
         hours = int(input("What hour will the rotation start at? (1-12) "))
         hours = hoursValidation()
     except ValueError:
@@ -59,6 +58,7 @@ def main():
     global finalValidation
     finalValidation = input("\nIs this info corect?\nThere are " + tempNOG + " guards working.\nSwap every " + tempTTS + " minutes.\nStart working at " + tempTime + meridian + ".\n(Y for yes, N for no) ")
     finalValidationValidation()
+    input("\nPress enter to end the program. ")
 
 def timeFormatter():
     global hours
