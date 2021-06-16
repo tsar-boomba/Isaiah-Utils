@@ -20,7 +20,6 @@ def main():
     except ValueError:
         numberOfGuards = numberOfGuardsValidation()
     try:
-        print(numberOfGuards)
         global timeToSwitch
         timeToSwitch = int(input("How long between swaps? (max 60 mins) "))
         timeToSwitch = timeToSwitchValidation()
@@ -28,7 +27,6 @@ def main():
         timeToSwitch = timeToSwitchValidation()
     try:
         global hours
-        print(numberOfGuards)
         hours = int(input("What hour will the rotation start at? (1-12) "))
         hours = hoursValidation()
     except ValueError:
@@ -60,6 +58,7 @@ def main():
     global finalValidation
     finalValidation = input("\nIs this info corect?\nThere are " + tempNOG + " guards working.\nSwap every " + tempTTS + " minutes.\nStart working at " + tempTime + meridian + ".\n(Y for yes, N for no) ")
     finalValidationValidation()
+    input("\nPress enter to end the program. ")
 
 def timeFormatter():
     global hours
@@ -79,7 +78,6 @@ def timeFormatter():
 def numberOfGuardsValidation():
     global numberOfGuards
     try:
-        print(numberOfGuards)
         if 1 <= numberOfGuards <= 10:
             return numberOfGuards
         else:
