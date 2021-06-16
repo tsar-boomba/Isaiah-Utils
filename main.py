@@ -162,6 +162,7 @@ def finalValidationValidation():
         print("Input Y for yes and N for no")
         time.sleep(1)
         finalValidation = input("Is this info corect?\nThere are " + tempNOG + " guards working.\n Swap every " + tempTTS + " minutes.\n Start working at " + tempTime + ".\n (Y for yes, N for no) ")
+        finalValidationValidation()
 
 if __name__ == "__main__":
     main()
