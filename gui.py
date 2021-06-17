@@ -21,8 +21,8 @@ class Application(tk.Frame):
         self.entry_thing = tk.Entry(self)
         self.entry_thing.pack(side="top")
 
-        self.my_var = tk.StringVar()
-        self.my_var.set("Type into me")
+        self.number_of_guards = tk.StringVar()
+        self.number_of_guards.set("Enter number of guards here (max 10)")
 
         self.entry_thing["textvariable"] = self.my_var
         self.entry_thing.bind('<Key-Return>',
