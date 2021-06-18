@@ -163,7 +163,7 @@ def minutesValidation():
         if 0 <= minutes <= 59:
             return minutes
         else:
-            print("Please input a number between 1 and 12")
+            print("Please input a number between 0 and 59")
             time.sleep(1)
             try:
                 minutes = int(input("What minute will the rotation start at? (0-59) "))
