@@ -1,2 +1,2 @@
 # Isaiah-Utils
-A library of utility by me
+Some niche utility scripts for lifeguarding and estimating paycheck amounts.
